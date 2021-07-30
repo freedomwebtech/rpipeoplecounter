@@ -24,9 +24,6 @@ while True:
         cv2.rectangle(frame1, (xA, yA), (xB, yB),(0, 255, 0), 2)
         
         b=len(boxes)
-#        cv2.putText(frame1, 'TEXT ON VIDEO'+str(count), (100, 120), font, 1, (0, 255, 255), 2, cv2.LINE_4)
-          
-#        peoplecount += count
         cv2.putText(frame1,"peoplecount:"+str(b),(20,50),0,2,(2550,0,0),3)
      img = cv2.resize(frame1,(640,480))
      cv2.imshow("Frame", frame1);
